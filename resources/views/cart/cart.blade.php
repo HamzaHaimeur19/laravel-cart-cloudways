@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.navbar')
 
 @section('content')
 <div class="mx-auto w-4/5">

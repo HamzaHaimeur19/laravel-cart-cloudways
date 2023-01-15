@@ -1,4 +1,4 @@
-@extends('layouts.app') <!-- extends the layouts app blade file -->
+@extends('layouts.navbar') <!-- extends the layouts app blade file -->
 
 @section('content')
 <div 

@@ -4,6 +4,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,7 @@ Route::get('delete-from-cart/{id}', [CartController::class, 'deleteFromCart'])->
 
 //update quantity
 Route::put('update-quantity/{id}', [CartController::class, 'updateQuantity'])->name('update.quantity');
+
+Auth::routes(); // create routes for user management (authentication + registration)
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
